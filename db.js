@@ -1,9 +1,9 @@
-const Pool=require('pg').Pool
-const pool=new Pool({
-    user:'rabin',
+const Sequelize = require('sequelize')
+
+const sequalize =new Sequelize('express','express','express',{
     host:'localhost',
-    database:'express',
-    password:'test123',
-    port:5432
+    dialect:'postgres'
+
 })
-module.exports=pool
+
+module.exports=sequalize
