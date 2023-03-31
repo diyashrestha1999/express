@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize')
 
-const sequalize =new Sequelize('express','express','express',{
+const sequelize =new Sequelize('express','angela','angela',{
     host:'localhost',
     dialect:'postgres'
 
 })
 
-module.exports=sequalize
+module.exports=sequelize
